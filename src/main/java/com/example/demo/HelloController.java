@@ -11,8 +11,8 @@ public class HelloController {
         return "Hello Aadya!";
     }
 
-     @GetMapping("/")
-    public String home() {
+        @GetMapping("/")
+        public String home() {
         return "index";
     }
      

@@ -13,9 +13,11 @@ public class ByeAadya {
         return "byeee";
     }
     @PostMapping("/greet")
-    public String greet(String aadyaName , Model model) {
+    public String greet(String aadyaName , String inputUser2 , String inputUser3 , Model model) {
         System.out.println("aadyaName: " + aadyaName );
         model.addAttribute("userLoggedin1234", aadyaName);
+        model.addAttribute("inputUser2", inputUser2);
+        model.addAttribute("inputUser3", inputUser3);
         return "result";
     }
 }
